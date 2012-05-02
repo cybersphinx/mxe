@@ -1,0 +1,5 @@
+--- /dev/null	2012-04-30 14:39:20.979955199 +0200
++++ eb-4.4.3/win32.cache	2012-05-01 23:47:49.383961111 +0200
+@@ -0,0 +1,2 @@
++ac_cv_func_printf_i64=${ac_cv_func_printf_i64=yes}
++ac_cv_func_printf_ll=${ac_cv_func_printf_ll=no}
