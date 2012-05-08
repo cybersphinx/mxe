@@ -31,7 +31,7 @@ define $(PKG)_BUILD
         -force-pkg-config \
         -release \
         -exceptions \
-        -static \
+        -shared \
         -prefix '$(PREFIX)/$(TARGET)' \
         -prefix-install \
         -script \
@@ -40,8 +40,7 @@ define $(PKG)_BUILD
         -webkit \
         -no-glib \
         -no-gstreamer \
-        -no-phonon \
-        -no-phonon-backend \
+        -phonon \
         -accessibility \
         -no-reduce-exports \
         -no-rpath \
@@ -49,10 +48,10 @@ define $(PKG)_BUILD
         -nomake demos \
         -nomake docs \
         -nomake examples \
-        -qt-sql-sqlite \
-        -qt-sql-odbc \
-        -qt-sql-psql \
-        -qt-sql-tds -D Q_USE_SYBASE \
+        -plugin-sql-sqlite \
+        -plugin-sql-odbc \
+        -plugin-sql-psql \
+        -plugin-sql-tds -D Q_USE_SYBASE \
         -system-zlib \
         -system-libpng \
         -system-libjpeg \
